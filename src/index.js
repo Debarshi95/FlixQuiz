@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { QuizDataProvider } from 'providers';
 import App from 'pages/App';
 import reportWebVitals from './reportWebVitals';
+
 import 'styles/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <QuizDataProvider>
+      <App />
+    </QuizDataProvider>
   </React.StrictMode>
 );
 
