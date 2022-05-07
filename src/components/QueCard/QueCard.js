@@ -1,9 +1,7 @@
-/* eslint-disable no-unused-vars */
 import cn from 'clsx';
 import { Text } from 'components';
 
 const QueCard = ({ question, options, answer, onClick, showCorrectAnswer, selectedChoice }) => {
-  console.log({ answer, showCorrectAnswer, options });
   const handleOptionClick = (e, option) => {
     if (onClick) {
       onClick(e, option);
