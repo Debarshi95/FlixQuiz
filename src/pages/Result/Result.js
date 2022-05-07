@@ -11,7 +11,7 @@ const Result = () => {
   const { Questions = [] } = getFilteredQuestion(userChoiceData?.name, data) || {};
 
   return (
-    <section className="max-w-2xl py-4 mx-auto">
+    <section className="p-4 max-w-2xl py-4 mx-auto">
       <Text variant="h5" className="text-2xl font-medium text-white text-center">
         Final Score: <span>{score}/40</span>
       </Text>

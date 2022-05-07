@@ -18,6 +18,13 @@ const Quiz = () => {
 
   useEffect(() => {
     if (isTimerExpired) {
+      const dataExists = userChoiceData.data.find((item) => item.queCount === count);
+
+      if (!dataExists) {
+        const userData = [...userChoiceData.data, { queCount: count, selected: '' }];
+        setUserChoiceData({ score: userChoiceData.score, data: userData, name, id });
+      }
+
       setCount((prev) => prev + 1);
       setShowCorrectAnswer(false);
     }
@@ -32,8 +39,7 @@ const Quiz = () => {
     } else {
       userScore += 10;
     }
-    const userData = [...userChoiceData.data];
-    userData.push({ queCount: count, selected: option });
+    const userData = [...userChoiceData.data, { queCount: count, selected: option }];
 
     setTimeout(() => {
       handleExpireTimer(true);
@@ -47,7 +53,7 @@ const Quiz = () => {
   }
 
   return (
-    <section className="max-w-2xl py-4 mx-auto">
+    <section className="p-4 max-w-2xl py-4 mx-auto">
       <Text variant="h6" className="text-2xl font-medium text-zinc-400 text-center">
         Time Remaining: {timer} secs
       </Text>

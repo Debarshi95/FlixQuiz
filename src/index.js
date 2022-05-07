@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { QuizDataProvider } from 'providers';
 import App from 'pages/App';
+import { QuizDataProvider } from 'providers';
+import { ErrorBoundary } from 'components';
 import reportWebVitals from './reportWebVitals';
-
 import 'styles/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <QuizDataProvider>
-      <App />
-    </QuizDataProvider>
+    <ErrorBoundary>
+      <QuizDataProvider>
+        <App />
+      </QuizDataProvider>
+    </ErrorBoundary>
   </React.StrictMode>
 );
 
