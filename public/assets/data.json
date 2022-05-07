@@ -1,0 +1,85 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Marvel",
+      "image": "/assets/images/marvel.jpg",
+      "Questions": [
+        {
+          "Question": "Who is the Winter Soldier",
+          "Answer": "Bucky",
+          "Options": ["Chris", "Bucky", "Peter", "Wanda"]
+        },
+        {
+          "Question": "Thor’s Mjolnir is made from the metal of a dying",
+          "Answer": "Star",
+          "Options": ["Star", "Vibranium", "Aluminium", "Mercury"]
+        },
+        {
+          "Question": "What’s the name of the amulet Doctor Strange wears around his neck",
+          "Answer": "The Eye of Agamotto",
+          "Options": ["Leg of Agamotto", "The Eye of Agamotto", "Soul stone", "Mind Stone"]
+        },
+        {
+          "Question": "Stan Lee made his final cameo in which Marvel movie?",
+          "Answer": "Avengers: Endgame",
+          "Options": ["Iron Man 3", "Avengers: Infinity War.", "Avengers: Endgame", "Wanda Vision"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "DC",
+      "image": "/assets/images/dc.jpg",
+      "Questions": [
+        {
+          "Question": "What does 'DC' stand for?",
+          "Answer": "Detective Comics",
+          "Options": ["Detective Comics", "Defective Comics", "Disney Comics", "Dead Comics"]
+        },
+        {
+          "Question": "Who was the founder of DC Comics?",
+          "Answer": "Malcolm Wheeler-Nicholson.",
+          "Options": ["Anthony Russo", "Joseph Russo", "Stan Lee", "Malcolm Wheeler-Nicholson."]
+        },
+        {
+          "Question": "Who is NOT a Green Lantern?",
+          "Answer": "Selena Kyle",
+          "Options": ["Selena Kyle", "Hal Jordan", "John Stewart", "Kyle Rainer"]
+        },
+        {
+          "Question": "Exactly How many Earths are there?",
+          "Answer": "Infinite",
+          "Options": ["1", "1000", "Infinite", "10000000"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Harry Potter",
+      "image": "/assets/images/harry.jpeg",
+      "Questions": [
+        {
+          "Question": "Which is the first book in Harry Potter series?",
+          "Answer": "Philosopher's stone",
+          "Options": [
+            "Chamber of secrets",
+            "Half blood Prince",
+            "Prisoner of Azkaban",
+            "Philosopher's stone"
+          ]
+        },
+        {
+          "Question": "Who is the eldest Weasley brother?",
+          "Answer": "Bill",
+          "Options": ["Charlie", "Ron", "Percy", "Bill"]
+        },
+        {
+          "Question": "What is the name of Voldermort's pet snake?",
+          "Answer": "Nagini",
+          "Options": ["Cobra", "Wormtail", "Nagini", "Dobby"]
+        }
+      ]
+    }
+  ]
+}
