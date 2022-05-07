@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home, Quiz, Result } from 'pages';
-import { Navbar } from 'components';
+import { Navbar, NotFound } from 'components';
 
 const App = () => {
   return (
@@ -11,6 +11,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/result" element={<Result />} />
           <Route path="/quiz/:name" element={<Quiz />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </main>
